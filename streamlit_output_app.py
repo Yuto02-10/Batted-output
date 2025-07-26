@@ -103,7 +103,7 @@ else:
             x, y = row['x_coord'], row['y_coord']
             draw_shape(draw, shape, int(x), int(y), 10, color)
         
-        st.image(img_to_draw, use_column_width=True)
+        st.image(img_to_draw, use_container_width=True)
         
         if st.checkbox("フィルター結果のデータを表示"):
             st.dataframe(filtered_df)
